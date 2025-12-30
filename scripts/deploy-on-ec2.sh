@@ -50,6 +50,7 @@ chmod +x "$ENV_FILE"  # Ensure it can be sourced
 log "Made $ENV_FILE executable"
 
 log "📦 Downloading JAR from S3..."
+# REFACTOR THIS ENTRY LATER AS USE A GITHUB SECRET INSTEAD
 aws s3 cp s3://lp-mediaconvstack-artifact-repo-dev-740994137015/learning-platform/dev/{{COMMIT_HASH}}/learning-platform-0.0.1-SNAPSHOT.jar /opt/myapp/app.jar
 
 log "🚀 Setting up systemd service..."
