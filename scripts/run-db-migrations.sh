@@ -23,6 +23,7 @@ trap '{
 ENV_PATH="/lp/dev/"
 ENV_FILE="/etc/profile.d/springboot_env.sh"
 FLYWAY_DIR="/tmp/flyway/sql"
+# REFACTOR THIS ENTRY LATER AS USE A GITHUB SECRET INSTEAD
 S3_MIGRATION_PATH="s3://lp-mediaconvstack-artifact-repo-dev-740994137015/learning-platform/dev/{{COMMIT_HASH}}/"
 
 # === 2. Fetch Environment Variables from SSM ===
