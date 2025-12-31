@@ -33,7 +33,7 @@ jobs:
         run: |
           COMMIT_HASH=${GITHUB_SHA::7}
           aws s3 cp --recursive src/main/resources/db/ \
-            s3://lp-mediaconvstack-artifact-repo-dev-805358685077/learning-platform/dev/$COMMIT_HASH/
+            s3://lp-mediaconvstack-artifact-repo-dev-740994137015/learning-platform/dev/$COMMIT_HASH/
 
       - name: Replace COMMIT_HASH in migration script
         run: |
@@ -172,7 +172,7 @@ jobs:
         run: |
           COMMIT_HASH=${GITHUB_SHA::7}
           aws s3 cp target/learning-platform-0.0.1-SNAPSHOT.jar \
-            s3://lp-mediaconvstack-artifact-repo-dev-805358685077/learning-platform/dev/$COMMIT_HASH/
+            s3://lp-mediaconvstack-artifact-repo-dev-740994137015/learning-platform/dev/$COMMIT_HASH/
 
       - name: This is the deploy tag
         run: echo ${GITHUB_SHA::7}
